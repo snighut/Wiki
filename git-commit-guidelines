@@ -1,0 +1,29 @@
+# Git Commit Message Conventions
+
+This document outlines the standard semantic prefixes used to categorize changes in the project's version control history.
+
+## Standard Semantic Prefixes
+
+| Prefix | Use Case |
+| :--- | :--- |
+| `feat:` | Adding a new feature to the codebase. |
+| `fix:` | Fixing a bug. |
+| `docs:` | Changes to documentation only (e.g., README, inline comments). |
+| `style:` | Formatting changes that do not affect code logic (white-space, semi-colons). |
+| `refactor:` | Code changes that neither fix a bug nor add a feature. |
+| `perf:` | Changes that improve application performance. |
+| `test:` | Adding missing tests or correcting existing ones. |
+| `build:` | Changes affecting the build system or external dependencies (e.g., gulp, npm). |
+| `ci:` | Changes to CI configuration files and scripts (e.g., GitHub Actions). |
+| `chore:` | Other changes that don't modify source or test files. |
+
+## Structure of a Commit Message
+
+A semantic commit message should follow this structure:
+
+```text
+<type>(<scope>): <short summary>
+
+[optional body: explain the why and how]
+
+[optional footer: link issue IDs like Closes #123]
